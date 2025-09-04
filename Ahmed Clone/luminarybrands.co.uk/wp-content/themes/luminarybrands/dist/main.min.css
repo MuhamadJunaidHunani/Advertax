@@ -1535,6 +1535,11 @@ a, button {
   width: 36px;
   height: 36px;
 }
+
+.footer .footerSocials__item.instaicons img{
+  width: 22px;
+  height: 22px;
+}
 .footer .footerSocials__item:hover {
   opacity: 0.6;
 }
