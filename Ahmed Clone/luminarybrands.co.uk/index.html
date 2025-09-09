@@ -407,6 +407,19 @@
             }
         </style>
     </noscript>
+
+ <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "fbc4bb66-cb1a-4568-8f7f-612e7f2d7d1f";
+        (function () {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+
 </head>
 
 <body class="home wp-singular page-template-default page page-id-8 wp-theme-luminarybrands" data-barba="wrapper">
@@ -1344,8 +1357,7 @@
                                                     fill="#F48B92" stroke="#F48B92" stroke-width="0.266667" />
                                             </svg>
                                         </label>
-                                        <input type="tel" id="phone" name="phone" placeholder="Your phone no"
-                                            required>
+                                        <input type="tel" id="phone" name="phone" placeholder="Your phone no" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="email"> Email
@@ -1464,51 +1476,51 @@
 
                                     <button class="basic__button" type="submit">Get in touch</button>
                                 </form>
-                               <script>
-function initContactForm() {
-    const form = document.getElementById("advertaxContactForm");
-    if (!form) return;
+                                <script>
+                                    function initContactForm() {
+                                        const form = document.getElementById("advertaxContactForm");
+                                        if (!form) return;
 
-    // Pehle se lagay huay listeners ko avoid karne ke liye clone hack
-    const newForm = form.cloneNode(true);
-    form.parentNode.replaceChild(newForm, form);
+                                        // Pehle se lagay huay listeners ko avoid karne ke liye clone hack
+                                        const newForm = form.cloneNode(true);
+                                        form.parentNode.replaceChild(newForm, form);
 
-    newForm.addEventListener("submit", async function (e) {
-        e.preventDefault();
-        const btn = newForm.querySelector("button[type=submit]");
-        btn.disabled = true;
-        btn.textContent = "Sending...";
+                                        newForm.addEventListener("submit", async function (e) {
+                                            e.preventDefault();
+                                            const btn = newForm.querySelector("button[type=submit]");
+                                            btn.disabled = true;
+                                            btn.textContent = "Sending...";
 
-        try {
-            const res = await fetch(newForm.action, {
-                method: "POST",
-                body: new FormData(newForm),
-                headers: { 'Accept': 'application/json' }
-            });
+                                            try {
+                                                const res = await fetch(newForm.action, {
+                                                    method: "POST",
+                                                    body: new FormData(newForm),
+                                                    headers: { 'Accept': 'application/json' }
+                                                });
 
-            if (res.ok) {
-                alert("✅ Message sent successfully!");
-                newForm.reset();
-            } else {
-                alert("❌ Something went wrong. Please try again.");
-            }
-        } catch (err) {
-            alert("⚠️ Network error");
-        } finally {
-            btn.disabled = false;
-            btn.textContent = "Send";
-        }
-    });
-}
+                                                if (res.ok) {
+                                                    alert("✅ Message sent successfully!");
+                                                    newForm.reset();
+                                                } else {
+                                                    alert("❌ Something went wrong. Please try again.");
+                                                }
+                                            } catch (err) {
+                                                alert("⚠️ Network error");
+                                            } finally {
+                                                btn.disabled = false;
+                                                btn.textContent = "Send";
+                                            }
+                                        });
+                                    }
 
-// run first load
-initContactForm();
+                                    // run first load
+                                    initContactForm();
 
-// run again when barba replaces content
-barba.hooks.after(() => {
-    initContactForm();
-});
-</script>
+                                    // run again when barba replaces content
+                                    barba.hooks.after(() => {
+                                        initContactForm();
+                                    });
+                                </script>
                             </div>
 
                         </div>
@@ -1576,8 +1588,8 @@ barba.hooks.after(() => {
                                             class="footerSocials__icon"
                                             src="wp-content/uploads/2024/05/iconLinkedin.svg" alt="iconLinkedin"
                                             width="36" height="37"></noscript> </a> <a
-                                    href="https://www.facebook.com/Advertax.UK?mibextid=ZbWKwL" class="footerSocials__item"> <img
-                                        class="footerSocials__icon"
+                                    href="https://www.facebook.com/Advertax.UK?mibextid=ZbWKwL"
+                                    class="footerSocials__item"> <img class="footerSocials__icon"
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2036%2037'%3E%3C/svg%3E"
                                         alt="iconFacebook" width="36" height="37"
                                         data-lazy-src="wp-content/uploads/2024/05/iconFacebook.svg"><noscript><img
