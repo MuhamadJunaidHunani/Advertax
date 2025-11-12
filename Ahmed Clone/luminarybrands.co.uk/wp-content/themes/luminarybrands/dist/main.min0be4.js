@@ -3372,7 +3372,7 @@
         };
         var U = {
           init: !0,
-          direction: "horizontal",
+          direction: "vertical",
           touchEventsTarget: "wrapper",
           initialSlide: 0,
           speed: 300,
