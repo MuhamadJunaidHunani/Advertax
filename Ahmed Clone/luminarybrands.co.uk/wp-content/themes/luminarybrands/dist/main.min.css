@@ -4498,6 +4498,7 @@ button {
   margin-bottom: 20px;
   border-radius: 20px;
   overflow: hidden;
+  border: 1.5px solid rgb(241, 241, 241);
 }
 
 @media (max-width: 768px) {
