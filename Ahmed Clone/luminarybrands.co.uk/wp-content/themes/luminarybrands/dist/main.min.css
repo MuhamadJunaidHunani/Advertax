@@ -4160,7 +4160,7 @@ button {
 }
 
 .pageSectionSwitcher__left {
-  width: calc(48% - 25px);
+  width: calc(100%);
 }
 
 @media (max-width: 768px) {
@@ -4187,7 +4187,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #C1C5CC;
+  color: #120A00;
   position: absolute;
   top: 50%;
   left: 0;
@@ -4264,8 +4264,9 @@ button {
   text-align: left;
   color: #4E555C;
   margin-top: 26px;
-  display: none;
+  display: block;
   padding-left: 52px;
+
 }
 
 @media (max-width: 768px) {
@@ -7262,7 +7263,7 @@ button {
   justify-content: center;
   background: #ffffff;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 50px 0 0px 0px;
   position: relative;
 }
 
@@ -7281,7 +7282,7 @@ button {
 }
 
 .aboutPageSectionTextImage__content {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .aboutPageSectionTextImage__title {
